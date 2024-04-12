@@ -1,0 +1,159 @@
+:root {
+  --green-color: #4caf50;
+}
+
+.hidden{
+  display: none !important;
+}
+
+.red-bg{
+  background-color: rgb(255, 0, 0) !important;
+  color: #fff !important;
+}
+
+.normal-bg{
+  color: lime;
+  background-color: black !important;
+}
+
+.green-bg{
+  background-color: var(--green-color) !important;
+  color: lime !important;
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: lime;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 25px;
+}
+
+[class^="container-"] {
+  margin-bottom: 15px;
+}
+
+/* console zone */
+.console{
+  border: 2px solid lime;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.console .output-log{
+  margin-left: 10px;
+}
+
+.console p{
+  margin-top: 5px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+/* status zone */
+.container-status{
+  display: flex;
+  justify-content: end;
+}
+
+.status{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid lime;
+  width: 15%;
+  height: 30px;
+  background-color:  var(--green-color);
+
+  font-weight: 900;
+
+}
+/* progress zone */
+.progress{
+  display: flex;
+}
+
+.progress .progress-bar{
+  border: 2px solid lime;
+  width: 90%;
+  height: 30px;
+}
+
+.progress .progress-bar .bar{
+  width: 100%;
+  height: 100%;
+  background-color: var(--green-color);
+}
+
+.progress .progress-label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  border: 2px solid lime;
+  width: 10%;
+  height: 30px;
+
+  font-weight: 900;
+}
+
+/* input zone */
+.input{
+  display: flex;
+  height: 40px;
+}
+
+.input .input-left{
+  width: 10%;
+}
+
+.input .input-left button{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  outline: none;
+  border: 2px solid lime;
+  color: lime;
+}
+
+.input .input-left button:hover{
+  background-color: var(--green-color);
+}
+
+.input .input-right{
+  display: flex;
+  align-items: center;
+
+  width: 90%;
+  border: 2px solid lime;
+}
+
+.input .input-right input{
+  margin-left: 10px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: lime;
+  font-weight: 700;
+}
+
+.input .input-right input::placeholder{
+  color: lime;
+}
+
+.input .input-right input:focus::placeholder{
+  opacity: 0.3;
+}
+
+
+
